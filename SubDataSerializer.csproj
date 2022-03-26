@@ -1,0 +1,16 @@
+<Project Sdk="Godot.NET.Sdk/3.3.0">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="addons\SubDataInspector\Dependencies\Newtonsoft.Json.dll" />
+    <Content Include="addons\SubDataInspector\Dependencies\Newtonsoft.Json.pdb" />
+    <Content Include="addons\SubDataInspector\Dependencies\Newtonsoft.Json.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>addons\SubDataInspector\Dependencies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

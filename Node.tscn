@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://TestNode.cs" type="Script" id=1]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+SerializedData = {
+"testField": "{\"testString\":\"1\",\"testString2\":\"2\",\"nestedTest\":{\"testNestedString\":\"3\"}}",
+"testField2": "{\"testString\":\"4\",\"testString2\":\"5\",\"nestedTest\":{\"testNestedString\":\"6\"}}"
+}

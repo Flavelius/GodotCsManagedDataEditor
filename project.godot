@@ -10,13 +10,13 @@ config_version=4
 
 [application]
 
-config/name="SubDataSerializer"
+config/name="CsManagedDataEditor"
 run/main_scene="res://Node.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/SubDataInspector/plugin.cfg", "res://addons/zylann.editor_debugger/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/ManagedResourceEditor/plugin.cfg" )
 
 [physics]
 

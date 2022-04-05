@@ -1,22 +1,57 @@
 ﻿using System;
-using addons.SubDataInspector;
+using System.Collections.Generic;
+using Godot;
+using ManagedResourceEditor;
 
 [Serializable]
 public struct TestStruct
 {
-    [CustomExport]
+    [ExportCustom]
     string testString;
-    
-    [CustomExport]
-    string testString2;
 
-    [CustomExport]
+    [ExportCustom]
+    Control.SizeFlags testEnum;
+
+    [ExportCustom]
+    byte[] byteArray;
+
+    [ExportCustom]
+    List<Control.SizeFlags> enumList;
+
+    [ExportCustom]
+    TestFlagsEnum testFlags;
+    
+    [ExportCustom]
+    Resource resourceRef;
+
+    [ExportCustom]
+    int testInteger;
+
+    [ExportCustom]
+    bool toggleField;
+
+    [ExportCustom]
     OtherTestStruct nestedTest;
 }
 
 [Serializable]
 public struct OtherTestStruct
 {
-    [CustomExport]
+    [ExportCustom]
     string testNestedString;
+
+    [ExportCustom]
+    byte byteField;
+
+    [ExportCustom]
+    ushort ushortField;
+}
+
+[Flags]
+public enum TestFlagsEnum
+{
+	None = 0,
+	A = 1,
+	B= 1 <<1,
+	C = 1<<2
 }

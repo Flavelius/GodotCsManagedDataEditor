@@ -1,12 +1,14 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://TestStoredData.cs" type="Script" id=1]
+[ext_resource path="res://SomeOtherResource.tres" type="Resource" id=2]
 
 [resource]
 script = ExtResource( 1 )
 serializedData = {
-"TestField": "{\"testString\":\"127\",\"testEnum\":1,\"byteArray\":\"AQIDAA==\",\"enumList\":[],\"testFlags\":0,\"resourceRef\":null,\"testInteger\":0,\"toggleField\":false,\"nestedTest\":{\"testNestedString\":\"56\",\"byteField\":0,\"ushortField\":0}}",
+"TestField": "{\"testString\":\"127\",\"testEnum\":1,\"byteArray\":\"AQIDAA==\",\"enumList\":[],\"testFlags\":0,\"resourceRef\":null,\"testInteger\":0,\"toggleField\":false,\"nestedTest\":{\"testNestedString\":\"56\",\"byteField\":0,\"ushortField\":0},\"otherResourceRef\":\"0064d2fb-9a73-4aae-8689-aaa9a58d0375\"}",
 "TestField2": "{\"testString\":\"1Test\",\"sizeFlags\":1,\"resourceRef\":null,\"testInteger\":123,\"nestedTest\":{\"testNestedString\":\"abc\",\"byteField\":0,\"ushortField\":0}}"
 }
 serializedReferences = {
+"0064d2fb-9a73-4aae-8689-aaa9a58d0375": ExtResource( 2 )
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CsManagedDataEditor;
 using Godot;
 using ManagedResourceEditor;
 
@@ -32,6 +33,11 @@ public struct TestStruct
 
     [ExportCustom]
     OtherTestStruct nestedTest;
+
+    [ExportCustom]
+    ResourceReference<SomeOtherResource> otherResourceRef;
+
+    public SomeOtherResource OtherResource => otherResourceRef;
 }
 
 [Serializable]
